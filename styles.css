@@ -1,0 +1,139 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Layout container */
+#homepage {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
+
+/* Left sidebar */
+#left-side {
+  background-color: #2f3542;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right content area */
+#right-side {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  gap: 5px;
+}
+
+/* Reusable container */
+.container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-bottom: 2px solid grey;
+  box-shadow: #333 0px 3px 8px;
+}
+#content{
+    display: grid;
+    grid-template-columns: 850px 1fr;
+    gap: 10px;
+}
+#contbaby1{
+    border-radius: 20px;
+    font-size: 20px;
+    height: 800px;
+    padding: 15px;
+}
+#daddy{
+    margin-left: 10px;
+    gap: 25px;
+    margin-top: 5px;;
+    box-sizing: border-box;
+    display: grid;
+    width: 800px;
+    height: 700px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.contbabybaby{
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+#contbaby2{
+    padding: 15px;
+    border-radius: 20px;
+    height: 800px;
+    font-size: 20px;
+}
+#Navbar{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+    margin-top: 10px;
+}
+.navcont>p{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(5, 4, 4);
+    cursor: pointer;
+}
+#firstnav{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50px 600px;
+}
+#secondnav{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50px 50px 150px;
+}
+#cont2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+#user{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+    gap: 400px;
+}
+#user1{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+#user2{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 70px 70px;
+}
+.usercont>button{
+    /* text-decoration: none; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #1c212b;
+    color: #e0e0e0;
+    padding: 15px;
+    border-radius: 20px;
+}
