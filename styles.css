@@ -27,6 +27,7 @@ body {
 /* Left sidebar */
 #left-side {
   background-color: #2f3542;
+  height:135vh;
   width: 100px;
   padding: 20px;
   color: #fff;
@@ -44,28 +45,44 @@ body {
   background-color: #ffffff;
   display: grid;
   grid-template-rows: 200px 1fr;
-  /* min-height: 1000px; */
   gap: 5px;
 }
 
 /* Reusable container */
 .container {
-  background-color: #e0e0e0;
+  background-color: rgb(102, 99, 171);
+  color: #f4f6f8;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  border-bottom: 2px solid grey;
+  box-shadow: 0 2px 6px rgb(17, 43, 94);
   box-shadow: #333 0px 3px 8px;
 }
 #cont2{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    position: fixed;
+    top: 0;      /* Set a fixed height */
+    /* background-color: #1c212b; */
+    z-index: 1000;        /* Keeps it above other content */
     padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#cont1{
+    min-width: auto;
+  margin-top: 160px; /* Slightly more than #cont2 height */
+  background-color: rgb(185, 195, 245);
+  height:fit-content;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 #content{
     display: grid;
@@ -90,6 +107,7 @@ body {
 }
 #contbaby1{
     border-radius: 20px;
+    margin-top: 40px;
     font-size: 20px;
     min-height: 800px;
     padding: 15px;
@@ -136,7 +154,7 @@ body {
     margin-top: 10px;
     font-family: monospace;
     font-weight: bold;
-    color: rgb(5, 4, 4);
+    color: whitesmoke;
 }
 #firstnav{
     display: grid;
