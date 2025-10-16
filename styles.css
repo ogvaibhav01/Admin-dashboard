@@ -14,18 +14,29 @@ body {
 /* Layout container */
 #homepage {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: auto 1fr;
   /* height: 100vh; */
 }
+#title img {
+  transition: transform 0.6s ease-in-out;
+}
 
+#title img:hover {
+  transform: rotate(360deg); /* Rotate the image on hover */
+}
 /* Left sidebar */
 #left-side {
   background-color: #2f3542;
+  width: 100px;
   padding: 20px;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+#left-side:hover {
+  width: 100%; /* Expanded width on hover */
 }
 
 /* Right content area */
@@ -58,25 +69,40 @@ body {
 }
 #content{
     display: grid;
-    grid-template-columns: 850px 1fr;
+    grid-template-columns: 1fr auto;
     /* height: 100%; */
     gap: 10px;
+}
+.option{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+.option:hover {
+    color: #1e90ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
 #contbaby1{
     border-radius: 20px;
     font-size: 20px;
-    height: 800px;
+    min-height: 800px;
     padding: 15px;
 }
 #daddy{
     margin-left: 10px;
-    gap: 25px;
-    margin-top: 5px;;
+    gap: 15px;
+    margin-top: 20px;
     box-sizing: border-box;
     display: grid;
-    width: 800px;
-    height: 700px;
-    grid-template-columns: 1fr 1fr;
+    min-width: 800px;
+    min-height: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .contbabybaby {
@@ -84,8 +110,13 @@ body {
   background-color: whitesmoke;
   padding: 20px;
   height: auto;
-  width: 350px;
-  max-width: 100%;     /* prevents overflow */
+  min-width: 100px;
+  max-width: 400px;     
+}
+.contbabybaby:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
 }
 #contbaby2{
     padding: 15px;
@@ -95,9 +126,9 @@ body {
 }
 #Navbar{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 4fr auto;
     padding: 5px;
-    gap: 20px;
+    gap: 5px;
     margin-top: 10px;
 }
 .navcont>p{
@@ -116,7 +147,7 @@ body {
 }
 #secondnav{
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-template-columns: 50px 50px 1fr;
 }
 #user{
@@ -127,8 +158,8 @@ body {
 }
 #user1{
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 20px;
+    grid-template-columns: 1fr 8fr;
+    gap: 10px;
 }
 #user2{
     display: grid;
