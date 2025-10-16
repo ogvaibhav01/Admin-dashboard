@@ -84,26 +84,26 @@ body {
 }
 #Navbar{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr auto;
     gap: 40px;
     margin-top: 10px;
 }
 .navcont>p{
-    font-size: 20px;
-    font-family: serif;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: monospace;
     font-weight: bold;
     color: rgb(5, 4, 4);
-    cursor: pointer;
 }
 #firstnav{
     display: grid;
     gap: 20px;
-    grid-template-columns: 50px 600px;
+    grid-template-columns: 50px 1fr;
 }
 #secondnav{
     display: grid;
     gap: 20px;
-    grid-template-columns: 50px 50px 150px;
+    grid-template-columns: 50px 50px 1fr;
 }
 #cont2{
     display: grid;
@@ -124,16 +124,43 @@ body {
 }
 #user2{
     display: grid;
-    gap: 25px;
-    grid-template-columns: 1fr 70px 70px;
+    /* gap: 15px; */
+    grid-template-columns: auto auto auto;
 }
 .usercont>button{
     /* text-decoration: none; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 16px;
+    /* font-weight: 100; */
     background-color: #1c212b;
     color: #e0e0e0;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#contbaby2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+#Announcements{
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 350px;
+    padding: 15px;
+    background-color:whitesmoke;
+    border-radius: 5%;
+}
+#Trending{
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 350px;
+    padding: 15px;
+    background-color:whitesmoke;
+    border-radius: 5%;
 }
