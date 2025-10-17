@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f4f6f8;
+  background-color: rgb(185, 195, 245);
   color: #333;
 }
 
@@ -36,13 +36,16 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+
 #left-side:hover {
-  width: 100%; /* Expanded width on hover */
+  width: 250px; /* Expand width on hover */
+  transition: width 0.3s ease;
 }
+
 
 /* Right content area */
 #right-side {
-  background-color: #ffffff;
+  background-color: rgb(185, 195, 245);
   display: grid;
   grid-template-rows: 200px 1fr;
   gap: 5px;
@@ -68,11 +71,18 @@ body {
     z-index: 1000;        /* Keeps it above other content */
     padding: 10px;
     display: grid;
+    height: 10%;
+    overflow: hidden;
     grid-template-rows: auto auto;
+
+}
+#cont2:hover {
+    height: 22%; /* Expand height on hover */
+    transition: height 0.3s ease;
 }
 #cont1{
     min-width: auto;
-  margin-top: 160px; /* Slightly more than #cont2 height */
+  margin-top: 5%; /* Slightly more than #cont2 height */
   background-color: rgb(185, 195, 245);
   height:fit-content;
   padding: 30px;
@@ -215,6 +225,14 @@ body {
 }
 .ann{
     font-size: 15px;
+    min-height: 100%;
+    width: fit-content;
+    border-radius: 20px;
+}
+.ann:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
 #Trending{
     display: grid;
@@ -235,10 +253,16 @@ body {
     margin-top: 6px;
 }
 .trendkidkid{
-    min-height: 40px;
+    min-height: 100%;
     width: fit-content;
     box-sizing: border-box;
+    border-radius: 10px;
     /* border: 2px solid black; */
+}
+.trendkidkid:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
 .option{
     display: grid;
