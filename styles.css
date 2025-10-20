@@ -10,6 +10,29 @@ body {
   background-color: rgb(185, 195, 245);
   color: #333;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  background: white;
+  z-index: 1000;
+  transition: right 0.4s ease;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+}
+.overlay-content {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 
 /* Layout container */
 #homepage {
@@ -25,8 +48,48 @@ body {
   transform: rotate(360deg); /* Rotate the image on hover */
 }
 /* Left sidebar */
+@-webkit-keyframes color-change-6x {
+  0% {
+    background: #1d3b3d;
+  }
+  15% {
+    background: #033c60;
+  }
+  30% {
+    background: #303560;
+  }
+  45%{
+    background: #0c0069;
+  }
+  60% {
+    background: #4c0675;
+  }
+  100% {
+    background: #560648;
+  }
+}
+@keyframes color-change-6x {
+  0% {
+    background: #1d3b3d;
+  }
+  15% {
+    background: #033c60;
+  }
+  30% {
+    background: #303560;
+  }
+  45%{
+    background: #0c0069;
+  }
+  60% {
+    background: #4c0675;
+  }
+  100% {
+    background: #00344d;
+  }
+}
 #left-side {
-  background-color: #2f3542;
+  animation: color-change-6x 20s infinite alternate;
   height:135vh;
   width: 100px;
   padding: 20px;
@@ -185,6 +248,14 @@ body {
     font-weight: 500;
     color: #e0e0e0;
     transition: color 0.3s ease;
+}
+.option>button{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 .option:hover {
     color: #1e90ff;

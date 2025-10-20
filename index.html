@@ -14,46 +14,46 @@
                     <img src="images/Dashboard.png" style="height:50px; width:50px; border-radius:30px;transition: transform 0.6s ease-in-out;">
                     <p style="margin-left: 10px;margin-top: 5px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;font-size: 25px;">Dashboard</p>
                 </div>
-                
                 <div id="op1" style="display: grid; grid-template-rows: repeat(6, 50px);padding: 15px;">
                     <div class="option">
                         <img src="images/8726049_home_alt_icon.png" style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Home</p>
+                        <button class="optionn" >Home</button>
                     </div>
                     <div class="option">
                         <img src="images/profile.png" style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Profile</p>
+                        <button class="optionn">Profile</button>
                     </div>
                     <div class="option">
                         <img src="images/messages.svg" style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Messages</p>
+                        <button class="optionn">Messages</button>
                     </div>
                     <div class="option">
                         <img src="images/history.png"style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">History</p>
+                        <button class="optionn">History</button>
                     </div>
                     <div class="option">
                         <img src="images/99903_tasks_icon.png" style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Tasks</p>
+                        <button class="optionn" onclick="openOverlayWithPage('tasks.html')">Tasks</button>
                     </div>
+                    
                     <div class="option">
                         <img src="images/897225_draw_file_vector tool_vectorize_icon.png" style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Communities</p>
+                        <button class="optionn">Communities</button>
                     </div>
                 </div>
                 
                 <div id="op2" style="display: grid; grid-template-rows: repeat(3, 50px);padding: 15px;align-self: end;">
                     <div class="option">
                         <img src="images/8726183_setting_icon.png"style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Setting</p>
+                        <button class="optionn">Setting</button>
                     </div>
                     <div class="option">
                         <img src="images/2303158_contact us_headphones_headset_help_listne_icon (1).png" style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Support</p>
+                        <button class="optionn">Support</button>
                     </div>
                     <div class="option">
                         <img src="images/2303193_closed_lock_locked_private_safe_icon.png" style="height:30px; width:30px; border-radius:30px;">
-                        <p class="optionn">Privacy</p>
+                        <button class="optionn">Privacy</button>
                     </div>
                 </div>
             </div>
@@ -200,5 +200,13 @@
             </div>
         </div>
      </div>
+     <!-- Overlays -->
+      <div id="overlay" class="overlay">
+  <div class="overlay-content">
+    <span class="close-btn" onclick="closeOverlay()">&times;</span>
+    <div id="overlay-body"></div>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
